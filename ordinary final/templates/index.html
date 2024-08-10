@@ -1,0 +1,312 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      
+      
+      #carouselExampleCaptions{margin-bottom:30px;
+      }
+      a img{
+        width:80px;
+        height:80px;
+      }
+
+   
+      
+    </style>
+  </head>
+  <body>
+ 
+     
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+           
+            <img src="static\images\Copy of अpna Bazar k.png" alt="...">APNABAZAR
+           
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu  bg-">
+                  <li><a class="dropdown-item" href="fruites">Fruits</a></li>
+                  <li><a class="dropdown-item" href="Veggies">Veggies</a></li>
+                  <li><a class="dropdown-item" href="Staples">Staples</a></li>
+                  <li><a class="dropdown-item" href="chocolateanddrinks">Chocolates & Drinks</a></li>
+                  <li><a class="dropdown-item" href="munchies">Munchies</a></li>
+                  <li><a class="dropdown-item" href="biscuites and bakery">Biscuits & Bakery</a></li>
+                  <li><a class="dropdown-item" href="breakfast">Breakfast ,Coffee ,Tea & Sugar</a></li>
+                  <li><a class="dropdown-item" href="masala ,oil & more">Masala ,Oil & More</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">More</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+
+            
+           <!-- <div class="box">
+                <form class="d-flex" role="search">
+            </div>
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>-->
+          
+            
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+               <li class="nav-item dropdown mx-2" >
+                  <a class="nav-link dropdown-toggle text-black" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Kritika
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                    <li><a class="dropdown-item" href="">Profile</a></li>
+                    <li><a class="dropdown-item" href="">Orders</a></li>
+                    <li><a class="dropdown-item" href="">Change Password</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item mx-2">
+                 <a href="" class="nav-link text-black"><span class="badge bg-danger">4</span> Cart </a>
+                </li>
+                <li class="nav-item mx-2">
+                 <a href="" class="nav-link text-black">Login</a>
+                </li>
+                <li class="nav-item mx-2">
+                 <a href="" class="nav-link text-black">Registration</a>
+                </li>
+              </ul>
+             </div>
+
+
+          </div>
+
+        </div>
+      </nav>
+       
+      
+      
+      
+    
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <img src="static\images\Slide1.1.png" class="d-block w-100"alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fresh fruits and veggies at your door-step</h5>
+              <p> </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="static\images\slide2.22.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5> </h5>
+              <p> </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="static\images\slide 3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Get upto 20% off</h5>
+              <p> </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+
+      
+      <div class="mx-auto" align="center" style="width: 2205x;">
+        <B>Shop By Categories</b>
+      </div>
+
+      <div class="m-5 pb-5 bg-light">
+ 
+  <div class="row justify-content-center" style="margin-left: 63px;" > 
+      
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+      <div class="col">
+        <div class="card" style="width:20rem;">
+          <img src="static\images\fruites.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fruits</h5>
+            <p class="card-text"></p>
+            <a href="fruites" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width:20rem;">
+          <img src="static\images\Veggies.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Veggies</h5>
+            <p class="card-text"></p>
+            <a href="veggies" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width:20rem;">
+          <img src="static\images\Staples.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Staples</h5>
+            <p class="card-text"></p>
+            <a href="staples" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width:20rem;">
+          <img src="static\images\ch and drinks.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Chocolates & Drinks </h5>
+            <p class="card-text"></p>
+            <a href="chocolateanddrinks" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width:20rem;">
+          <img src="static\images\munchies 1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Munchies </h5>
+            <p class="card-text"></p>
+            <a href="munchies" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width:20rem;">
+          <img src="static\images\biscuits.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Biscuits & Bakery </h5>
+            <p class="card-text"></p>
+            <a href="biscuites" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width:20rem;">
+          <img src="static\images\breakfast t coffee&sugar.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Breakfast ,Coffee ,Tea & Sugar </h5>
+            <p class="card-text"></p>
+            <a href="breakfast" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width:20rem;">
+          <img src="static\images\masala nd oil.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"> Masala ,Oil & More </h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+
+  <!footer!>
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+      <a>
+      <h3 img="Copy of अpna Bazar k.png">APNABAZAR<span></span></h3>
+      </a>
+      <p class="footer-links">
+        <a href="#" class="link-1">Home</a>
+        <a href="#">About</a>
+        <a href="#">Faq</a>
+         <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">apnabazar© 2015</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>b/456 eastgate</span> Patel Nager, New Delhi</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+91+5555555555</p>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:support@company.com">apnabazar@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer-right">
+
+      <div class="footer-icons">
+
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+
+      </div>
+      <div class="footer-payment">
+        <h2  style="font-size:24px">Payments</h2>
+        <i class="fa fa-cc-visa" style="font-size:24px"></i>
+      </div>
+
+    </div>
+
+  </footer>
+
+ 
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
